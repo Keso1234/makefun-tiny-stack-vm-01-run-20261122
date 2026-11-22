@@ -49,9 +49,8 @@ default:r=(A>>>0)<(B>>>0)?1:0;
 }
 s-=2;D[s++]=r;break;}
 case 48:case 49:case 50:{
-let z=(p[y-2]|p[y-1]<<8)<<16>>16,w=1;
-if(k!=48){let v=D[--s];w=k==49?v==0:v!=0;}
-if(w)g=y+z;
+let z=(p[y-2]|p[y-1]<<8)<<16>>16;
+if(k==48||(k==49)==(D[--s]==0))g=y+z;
 break;}
 case 51:if(h==64)return E(7);C[h++]=y;g=p[y-2]|p[y-1]<<8;break;
 case 52:if(!h)return E(8);g=C[--h];break;
